@@ -1,16 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
 
-import "./styles.css";
+const App = () => (
+  <div>
+    <h1>Material U.I. Boilerplate</h1>
+  </div>
+);
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Material UI Boilerplate</h1>
-      <h2>BUDL</h2>
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+render(<App />, document.getElementById("root"));
